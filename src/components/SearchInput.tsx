@@ -16,7 +16,7 @@ const SearchInput = ({ onSearch }: Props) => {
         if (ref.current) onSearch(ref.current.value);
       }}
     >
-      <InputGroup>
+      <InputGroup border={"2px solid #f9f9f93d"} borderRadius={20}>
         <InputLeftElement children={<BsSearch />} />
         <Input
           ref={ref}
