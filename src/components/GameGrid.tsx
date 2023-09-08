@@ -20,17 +20,21 @@ const GameGrid = ({ gameQuery }: Props) => {
       padding="10px"
       spacing={6}
     >
-      {isLoading
-        ? skeletons.map((skeleton) => (
-            <GameCardContainer key={skeleton}>
-              <GameCardSkeleton />
-            </GameCardContainer>
-          ))
-        : data.map((game) => (
-            <GameCardContainer key={game.id}>
-              <GameCard game={game} />
-            </GameCardContainer>
-          ))}
+      {isLoading ? (
+        skeletons.map((skeleton) => (
+          <GameCardContainer key={skeleton}>
+            <GameCardSkeleton />
+          </GameCardContainer>
+        ))
+      ) : data?.length === 0 ? (
+        <Text color="yellow">No Item found!</Text>
+      ) : (
+        data.map((game) => (
+          <GameCardContainer key={game.id}>
+            <GameCard game={game} />
+          </GameCardContainer>
+        ))
+      )}  
     </SimpleGrid>
   );
 };
