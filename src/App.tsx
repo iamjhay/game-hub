@@ -8,8 +8,8 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
+import { Helmet } from "react-helmet-async";
 // import { Meta } from "./utils/Meta";
-import { Helmet } from "react-helmet";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -53,13 +53,13 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://game-hub-navy-ten.vercel.app/home.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://game-fw56u4ab3-iamjhay.vercel.app/"
+          content="https://game-hub-navy-ten.vercel.app/"
         />
         <meta property="twitter:title" content="GameHub" />
         <meta
@@ -68,7 +68,7 @@ function App() {
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/images/meta-tags.png"
+          content="https://game-hub-navy-ten.vercel.app/home.png"
         />
       </Helmet>
       ‍
