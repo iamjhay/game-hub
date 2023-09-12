@@ -20,7 +20,7 @@ export const Meta = ({ title, description, imageUrl, imageAlt }: Metas) => (
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://game-irf43w07b-iamjhay.vercel.app/"
+      content="https://game-hub-navy-ten.vercel.app/images/meta-tags.png"
     />
     <meta property="og:title" content="GameHub - Home Of Everything Games" />
     <meta property="og:description" content={description} />
