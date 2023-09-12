@@ -19,7 +19,7 @@ export interface GameQuery {
 }
 
 const content = {
-  pageTitle: "CK - Home",
+  pageTitle: "GameHub - Home",
   pageDescription:
     "Game hub is a platform where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from.",
   metaImageAlt:
