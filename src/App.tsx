@@ -8,8 +8,8 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
-import MetaDecorator from "./components/MetaDecorator.jsx";
-import metaThumbnail from "./assets/react.svg";
+// import metaThumbnail from "./assets/react.svg";
+import { MetaDecorator } from "./components/MetaDecorator";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -18,23 +18,23 @@ export interface GameQuery {
   searchText: string;
 }
 
+const content = {
+  pageTitle: "CK - Home",
+  pageDescription:
+    "Game hub is a platform where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from.",
+  metaImageAlt:
+    "The image contains the logo of this website. The letter C with some sort of an elliptical shape at the bottom.",
+};
+
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
-
-  const content = {
-    pageTitle: "CK - Home",
-    pageDescription:
-      "Hey, this is my personal website. You can take a look at my portfolio, download my CV and see how you can contact me!",
-    metaImageAlt:
-      "The image contains the logo of this website. The letter C with some sort of an elliptical shape at the bottom.",
-  };
 
   return (
     <>
       <MetaDecorator
         description={content.pageDescription}
         title={content.pageTitle}
-        imageUrl={metaThumbnail}
+        imageUrl={"vite.svg"}
         imageAlt={content.metaImageAlt}
       />
       <Grid
