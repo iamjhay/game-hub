@@ -8,7 +8,7 @@ interface Meta {
 }
 
 const metaDecorator = {
-  hostname: "https://game-md1ykn4u5-iamjhay.vercel.app/",
+  hostname: "https://game-md1ykn4u5-iamjhay.vercel.app",
   twitterUsername: "@celikkoseoglu",
 };
 
@@ -44,7 +44,7 @@ export const MetaDecorator = ({
     <meta property="twitter:description" content={description} />
     <meta
       property="twitter:image"
-      content="https://game-hmn7gox2e-iamjhay.vercel.app/vite.svg"
+      content={metaDecorator.hostname + imageUrl}
     />
   </Helmet>
 );

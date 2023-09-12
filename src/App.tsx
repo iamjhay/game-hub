@@ -8,7 +8,7 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
-// import metaThumbnail from "./assets/react.svg";
+import metaThumbnail from "./assets/home.png";
 import { MetaDecorator } from "./components/MetaDecorator";
 
 export interface GameQuery {
@@ -34,7 +34,7 @@ function App() {
       <MetaDecorator
         description={content.pageDescription}
         title={content.pageTitle}
-        imageUrl={"vite.svg"}
+        imageUrl={metaThumbnail}
         imageAlt={content.metaImageAlt}
       />
       <Grid
