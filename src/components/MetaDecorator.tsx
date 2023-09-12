@@ -8,7 +8,7 @@ interface Meta {
 }
 
 const metaDecorator = {
-  hostname: "https://game-md1ykn4u5-iamjhay.vercel.app",
+  hostname: "https://game-hub-navy-ten.vercel.app",
   twitterUsername: "@celikkoseoglu",
 };
 
@@ -24,11 +24,15 @@ export const MetaDecorator = ({
     <meta name="description" content={description} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content={metaDecorator.hostname + imageUrl} />
     <meta
       property="og:url"
-      content="https://game-hmn7gox2e-iamjhay.vercel.app/"
+      content={
+        metaDecorator.hostname +
+        window.location.pathname +
+        window.location.search
+      }
     />
-    <meta property="og:image" content={metaDecorator.hostname + imageUrl} />
     <meta
       property="og:url"
       content={
