@@ -8,7 +8,8 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
-import { Meta } from "./utils/Meta";
+// import { Meta } from "./utils/Meta";
+import { Helmet } from "react-helmet";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -17,28 +18,43 @@ export interface GameQuery {
   searchText: string;
 }
 
-let metaThumbnail = "/home.png";
+// let metaThumbnail = "/home.png";
 
-const content = {
-  pageTitle: "GameHub - Home",
-  pageDescription:
-    "Game hub is a forum where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from.",
-  metaImageAlt:
-    "The image contains the logo of this website. The letter C with some sort of an elliptical shape at the bottom.",
-};
+// const content = {
+//   pageTitle: "GameHub - Home",
+//   pageDescription:
+//     "Game hub is a forum where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from.",
+//   metaImageAlt:
+//     "The image contains the logo of this website. The letter C with some sort of an elliptical shape at the bottom.",
+// };
 
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
   return (
     <>
-      <Meta
-        description={content.pageDescription}
-        title={content.pageTitle}
-        imageUrl={metaThumbnail}
-        imageAlt={content.metaImageAlt}
-      />
-      <img src="./home.png" alt="" />
+      <Helmet>
+        ‍<title>Pets - Products</title>
+        <meta property="og:url" content="pets.abc" />
+        <meta property="og:site_name" content="Pets - Products" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Pets - Products" />
+        <meta property="og:description" content="Best Products for your pet" />
+        <meta property="og:image" content="./home.png" />
+        <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
+        <meta
+          name="description"
+          content="Find all the best quality products your pet may need"
+        />{" "}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@user" />
+        <meta name="twitter:creator" content="@user" />
+        <meta name="twitter:title" content="Pets - Products" />
+        <meta name="twitter:description" content="Best Products for your pet" />
+        <meta name="twitter:image" content="./home.png" />‍
+      </Helmet>
+      ‍
       <Grid
         templateAreas={{
           base: `"nav" "main"`,
