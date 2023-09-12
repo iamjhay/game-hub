@@ -34,25 +34,42 @@ function App() {
   return (
     <>
       <Helmet>
-        ‍<title>Pets - Products</title>
-        <meta property="og:url" content="pets.abc" />
-        <meta property="og:site_name" content="Pets - Products" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Pets - Products" />
-        <meta property="og:description" content="Best Products for your pet" />
-        <meta property="og:image" content="./home.png" />
-        <meta property="fb:app_id" content="ID_APP_FACEBOOK" />
+        <title>GameHub</title>
+        <meta name="title" content="GameHub" />
         <meta
           name="description"
-          content="Find all the best quality products your pet may need"
-        />{" "}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@user" />
-        <meta name="twitter:creator" content="@user" />
-        <meta name="twitter:title" content="Pets - Products" />
-        <meta name="twitter:description" content="Best Products for your pet" />
-        <meta name="twitter:image" content="./home.png" />‍
+          content="Game hub is a platform where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://game-fw56u4ab3-iamjhay.vercel.app/"
+        />
+        <meta property="og:title" content="GameHub" />
+        <meta
+          property="og:description"
+          content="Game hub is a platform where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from."
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://game-fw56u4ab3-iamjhay.vercel.app/"
+        />
+        <meta property="twitter:title" content="GameHub" />
+        <meta
+          property="twitter:description"
+          content="Game hub is a platform where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from."
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+        />
       </Helmet>
       ‍
       <Grid
