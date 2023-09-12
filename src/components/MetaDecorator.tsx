@@ -1,28 +1,7 @@
-import { Helmet } from "react-helmet";
 
-interface Meta {
-  title: string;
-  description: string;
-  imageUrl: string;
-  imageAlt: string;
-}
 
-const metaDecorator = {
-  hostname: "https://game-hub-navy-ten.vercel.app",
-  twitterUsername: "@celikkoseoglu",
-};
-
-export const MetaDecorator = ({
-  title,
-  description,
-  imageUrl,
-  imageAlt,
-}: Meta) => (
-  <Helmet>
-    <title>{title}</title>
-    <meta property="og:title" content={title} />
-    <meta name="description" content={description} />
-    <meta property="og:description" content={description} />
+{
+  /* <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={metaDecorator.hostname + imageUrl} />
     <meta
@@ -40,18 +19,8 @@ export const MetaDecorator = ({
         window.location.pathname +
         window.location.search
       }
-    />
-    <meta name="twitter:image:alt" content={imageAlt} />
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={metaDecorator.hostname} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta
-      property="twitter:image"
-      content={metaDecorator.hostname + imageUrl}
-    />
-  </Helmet>
-);
+    /> */
+}
 
 // <!-- Open Graph / Facebook -->
 // <meta property="og:type" content="website" />

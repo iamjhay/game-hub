@@ -8,7 +8,7 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
-import { MetaDecorator } from "./components/MetaDecorator";
+import { Meta } from "./utils/Meta";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <MetaDecorator
+      <Meta
         description={content.pageDescription}
         title={content.pageTitle}
         imageUrl={metaThumbnail}
