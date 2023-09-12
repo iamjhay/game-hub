@@ -9,7 +9,7 @@ interface Meta {
 
 const MetaDecorator = ({ title, description, imageUrl, imageAlt }: Meta) => {
   const metaDecorator = {
-    hostname: "https://celikk.me",
+    hostname: "https://game-md1ykn4u5-iamjhay.vercel.app/",
     twitterUsername: "@celikkoseoglu",
   };
 
