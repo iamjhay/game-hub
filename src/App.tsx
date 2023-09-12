@@ -21,7 +21,7 @@ export interface GameQuery {
 const content = {
   pageTitle: "GameHub - Home",
   pageDescription:
-    "Game hub is a platform where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from.",
+    "Game hub is a forum where you find premium games that are currenlty trending worldwide. You can filter based on actions, rogue and so many options present to select from.",
   metaImageAlt:
     "The image contains the logo of this website. The letter C with some sort of an elliptical shape at the bottom.",
 };
