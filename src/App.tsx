@@ -8,7 +8,6 @@ import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
-import metaThumbnail from "./assets/home.png";
 import { MetaDecorator } from "./components/MetaDecorator";
 
 export interface GameQuery {
@@ -17,6 +16,8 @@ export interface GameQuery {
   sortOrder: string;
   searchText: string;
 }
+
+let metaThumbnail = "/home.png";
 
 const content = {
   pageTitle: "GameHub - Home",
@@ -37,6 +38,7 @@ function App() {
         imageUrl={metaThumbnail}
         imageAlt={content.metaImageAlt}
       />
+      <img src="./home.png" alt="" />
       <Grid
         templateAreas={{
           base: `"nav" "main"`,
