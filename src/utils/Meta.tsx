@@ -20,13 +20,13 @@ export const Meta = ({ title, description, imageUrl, imageAlt }: Metas) => (
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://game-hub-navy-ten.vercel.app/images/meta-tags.png"
+      content="https://game-hub-navy-ten.vercel.app/home"
     />
     <meta property="og:title" content="GameHub - Home Of Everything Games" />
     <meta property="og:description" content={description} />
     <meta
       property="og:image"
-      content="https://game-hub-navy-ten.vercel.app/images/meta-tags.png"
+      content="https://game-hub-navy-ten.vercel.app/home.png"
     />
     <meta name="twitter:image:alt" content={imageAlt} />
     <meta property="twitter:card" content="summary_large_image" />
